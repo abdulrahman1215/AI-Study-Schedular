@@ -4,6 +4,7 @@ from app.db.database import engine, Base
 from app.models.user_model import User
 
 from app.api.auth_route import router as auth_router
+from app.api.user_route import router as user_router
 
 Base.metadata.create_all(bind=engine)
 
@@ -12,6 +13,7 @@ app = FastAPI(
     version ="1.0.0"
 )
 app.include_router(auth_router)
+app.include_router(user_router)
 
 @app.get("/")
 def home():
