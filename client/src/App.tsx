@@ -3,6 +3,7 @@ import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Dashboard from "./pages/Dashboard"
 import Landing from "./pages/Landing"
+import AIPlanner from "./pages/AIPlanner"
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<Signup />}/>
         <Route path="/dashboard" element={<Dashboard />}/>
+        <Route path="/ai-planner" element={<AIPlanner />}/>
       </Routes>
     </BrowserRouter>
   )
